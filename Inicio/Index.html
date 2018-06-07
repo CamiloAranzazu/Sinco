@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>:♠.::CAP::.♠:</title>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+	<div id="particles-js"></div>
+
+
+
+    <div class="texto row">
+        <div class="col-md-2">
+           
+        </div>
+
+        <div class="divPadre col-md-5">
+            <h2 class="colorTitle">Sincosoft</h2>
+            <h5> Ejercicios prácticos del ciclo de capacitación de SincoABR </h5>    
+            <button type="button" class="btn btn-outline-secondary vistaHtml btn-lg btn-block contenedor">Interface SincoABR</button>        
+            <button type="button"  class="btn btn-outline-secondary vistaPiramide btn-lg btn-block contenedor ">Piramide</button>
+            <button type="button" class="btn btn-outline-secondary vistaCalculadora btn-lg btn-block contenedor ">Calculadora</button>
+            <button type="button" class="btn btn-outline-secondary vistaOjos btn-lg btn-block contenedor ">Ojos</button>
+           
+        </div>
+      
+        <div class="vista col-md-5">
+            
+
+        </div>
+    </div>
+    
+    <!--Vistas-->
+
+    <!--piramide-->
+    <script>      
+        $(document).ready(function () {
+            $('.divPadre').on('click', 'button.vistaPiramide', function (event) {
+                $('.vista').html(' <h4> Página web que genera una pirámide de 1 a 50 </h4> </br></br>  <h2> <a href="../Piramide 1/index.html" target="_parent">IR A LA PAGINA</a> </h2>  ');
+              // console.log("funciona");                    
+            });
+        });
+    </script>
+
+    <!--Estadistica-->
+    <script>
+        $(document).ready(function () {
+            $('.divPadre').on('click', 'button.vistaHtml', function (event) {
+                $('.vista').html('<h4> interfaces gráfica, utilizando HTML y CSS.</h4>  </br></br>  <h2> <a href="../Interface/Interface.html" target="_parent">IR A LA PAGINA</a> </h2>');
+             });
+        });
+    </script>
+
+    <!--Calculadora-->
+    <script>
+        $(document).ready(function () {
+            $('.divPadre').on('click', 'button.vistaCalculadora', function (event) {
+                $('.vista').html('<h4> Calculadora, utilizando Javascript HTML y CSS.</h4>  </br></br>  <h2> <a href="../Calculadora/index.html" target="_parent">IR A LA PAGINA</a> </h2>');
+             });
+        });
+    </script>
+
+
+   <!--Ojitos-->
+    <script>
+        $(document).ready(function () {
+            $('.divPadre').on('click', 'button.vistaOjos', function (event) {
+                $('.vista').html('  <h4> Página que muestra una cara cuyos ojos sigan al cursor del ratón en su movimiento. </h4> </br></br>  <h2> <a href="../Ojos/Ojos.html">IR A LA PAGINA</a> </h2> ');
+             });
+        });
+    </script>
+
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="particles.js"></script>
+	<script src="particulas.js"></script>
+</body>
+</html>

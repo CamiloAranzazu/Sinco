@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+   
+    <div class="resul">
+        <input type="text" class="palabra"/>
+        <button type="button" class="boton">Contar letras</button>  
+    </div><br/>
+    <div class="vista">
+
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+         $('.resul').on('click', 'button.boton', function (event) {
+         $('.vista').html(' <h4> Página web que genera una pirámide de 1 a 50 </h4>');
+              // console.log("funciona");
+            });
+        });
+    </script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</body>
+</html>
